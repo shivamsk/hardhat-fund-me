@@ -1,23 +1,23 @@
-# Hardhat Fund Me - Typescript Edition
+# Hardhat Fund Me
 
-££ Solhint
+## Solhint
 
 ```
 yarn solhint contracts/*.sol
 ```
 
-££ Deploy
+## Deploy
 
 - Used hardhat-deploy npm package  
 ```
 yarn harhat deploy
 ```
 
-££ Chainlink Addresses
+## Chainlink Addresses
 
 - https://docs.chain.link/data-feeds/price-feeds/addresses/?network=ethereum
 
-££ Mock Deploy 
+## Mock Deploy 
 
 - Used the MockV3Aggregator from chainlink https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.6/tests/MockV3Aggregator.sol
 - This is placed in contracts/test folder. 
@@ -33,14 +33,14 @@ yarn hardhat deploy --tags mocks
 ```
 yarn hardhat node
 ```
-££ Style Guide 
+## Style Guide 
 
 - https://docs.soliditylang.org/en/v0.8.17/style-guide.html
 - Check this Order of Layout :
 - https://docs.soliditylang.org/en/v0.8.17/style-guide.html#order-of-layout
 
 
-££ Testing
+## Testing
 
 - Unit Tests are done locally
 - - local hardhat
@@ -50,14 +50,14 @@ yarn hardhat node
 - yarn hardhat test --grep "Withdraw ETH"
 - - Runs the test with matching string 
 
-££ 
+## 
 Ethers Documentation 
 
 - https://docs.ethers.org/v5/
 - https://docs.ethers.org/v5/api/utils/display-logic/#utils-parseUnits
 
 
-££ Cheaper
+## Cheaper
 
 - State Variables : https://docs.soliditylang.org/en/v0.8.17/internals/layout_in_storage.html
 - Check Implementation at https://youtu.be/gyMwXuJrbJQ?t=42753
@@ -71,5 +71,5 @@ $$ Staging Tests
 - Staging Tests only run on Test nets while Normal Unit Tests run on Development ( local ) networks
 - These are run before deploying to the main net for the final confirmation
 
-£££ Reference : 
+### Reference : 
 https://github.com/PatrickAlphaC/hardhat-fund-me-fcc
